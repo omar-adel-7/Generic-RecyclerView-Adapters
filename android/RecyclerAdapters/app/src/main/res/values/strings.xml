@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RecyclerAdapters</string>
+    <string name="emptylist">empty list</string>
+    <string name="noInternetConnection">لا يوجد اتصال بالانترنت</string>
+    <string name="loading">تحميل</string>
+    <string name="normaladapter">Show Normal Adapter</string>
+    <string name="genericadapter">Show Generic Adapter</string>
+    <string name="databindingadapter">Show Databinding Adapter</string>
+    <string name="genericadapter_title">Generic Adapter</string>
+    <string name="normaladapter_title">Normal Adapter</string>
+    <string name="databindingadapter_title">Databinding Adapter</string>
+    <string name="errorinwebservice">error in api</string>
+
+</resources>

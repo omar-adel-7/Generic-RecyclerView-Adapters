@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include android:id="@+id/rlToolBar"
+            layout="@layout/top_bar"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            >
+
+            <omar.apps923.recycleradapters.gui.CustomButton
+                android:id="@+id/btnGeneric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_margin"
+                android:background="@color/colorPrimary"
+                android:text="@string/genericadapter"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:onClick="showGenericAdapter"
+                />
+
+            <omar.apps923.recycleradapters.gui.CustomButton
+                android:id="@+id/btnNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_margin"
+                android:background="@color/colorPrimary"
+                android:text="@string/normaladapter"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:onClick="showNormalAdapter"
+                />
+
+            <omar.apps923.recycleradapters.gui.CustomButton
+                android:id="@+id/btnDatabinding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_margin"
+                android:background="@color/colorPrimary"
+                android:text="@string/databindingadapter"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:onClick="showDataBindingAdapter"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

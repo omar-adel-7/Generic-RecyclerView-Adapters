@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:drawme="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    <variable
+        name="item"
+        type="omar.apps923.recycleradapters.models.Book" />
+</data>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="@dimen/small_margin"
+android:orientation="vertical"
+android:gravity="center_vertical">
+
+<com.rafakob.drawme.DrawMeRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/small_padding"
+    android:paddingRight="@dimen/small_padding"
+    drawme:dm_radius="@dimen/small_radius"
+    drawme:dm_backColor="@android:color/white"
+
+    >
+
+    <ImageView
+        android:id="@+id/imgvImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgvImage"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:orientation="vertical"
+        android:id="@+id/llTxts"
+        android:paddingRight="16dp">
+
+        <omar.apps923.recycleradapters.gui.CustomTextView
+            android:id="@+id/txtvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="@{item.title}" />
+
+        <omar.apps923.recycleradapters.gui.CustomTextView
+            android:id="@+id/txtvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:gravity="left|center_vertical"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:text="@{item.desc}" />
+
+    </LinearLayout>
+
+
+</com.rafakob.drawme.DrawMeRelativeLayout>
+
+</LinearLayout></layout>
