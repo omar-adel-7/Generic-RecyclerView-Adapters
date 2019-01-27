@@ -1,5 +1,6 @@
 package omar.apps923.recycleradapters.adapters.Generic;
 
+
 import android.content.Context;
 import android.view.ViewGroup;
 
@@ -86,6 +87,11 @@ public   class GenericRecyclerViewAdapter<T> extends RecyclerView.Adapter<Recycl
 
     public void addItem(int position, T data) {
         mList.add(position, data);
+        notifyDataSetChanged();
+    }
+
+    public void updateItem(int position, T data) {
+        mList.set(position, data);
         notifyDataSetChanged();
     }
 
