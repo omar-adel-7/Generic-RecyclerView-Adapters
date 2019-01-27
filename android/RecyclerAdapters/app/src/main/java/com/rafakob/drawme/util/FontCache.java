@@ -2,7 +2,7 @@ package com.rafakob.drawme.util;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.support.v4.util.SimpleArrayMap;
+import androidx.collection.SimpleArrayMap;
 
 public class FontCache {
     private static final SimpleArrayMap<String, Typeface> cache = new SimpleArrayMap<>();

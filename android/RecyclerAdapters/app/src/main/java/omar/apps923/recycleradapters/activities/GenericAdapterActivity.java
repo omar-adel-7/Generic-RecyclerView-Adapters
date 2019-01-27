@@ -1,8 +1,8 @@
 package omar.apps923.recycleradapters.activities;
 
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,11 +38,11 @@ public class GenericAdapterActivity extends BaseActivity   {
 
         rv = (RecyclerViewEmptySupport)findViewById(R.id.rv) ;
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), RecyclerView.VERTICAL, false);
         rv.setLayoutManager(layoutManager);
         adapter = new GenericRecyclerViewAdapter<>(this, new GenericRecyclerViewAdapter.AdapterDrawData() {
             @Override
-            public RecyclerView.ViewHolder getView(ViewGroup parent) {
+            public RecyclerView.ViewHolder getView(ViewGroup parent ,  int viewType) {
 
                 return new BooksVH<>(GenericAdapterActivity.this,
                         BooksVH.getView(GenericAdapterActivity.this, parent));

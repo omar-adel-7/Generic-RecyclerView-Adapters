@@ -1,7 +1,7 @@
 package omar.apps923.recycleradapters.activities;
 
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -9,6 +9,7 @@ import android.widget.Toast;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import androidx.recyclerview.widget.RecyclerView;
 import omar.apps923.recycleradapters.gui.CustomTextView;
 import omar.apps923.recycleradapters.gui.RecyclerViewEmptySupport;
 import omar.apps923.recycleradapters.R;
@@ -37,7 +38,7 @@ public class NormalAdapterActivity extends BaseActivity implements CustomRecycle
 
         rv = (RecyclerViewEmptySupport)findViewById(R.id.rv) ;
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), RecyclerView.VERTICAL, false);
         rv.setLayoutManager(layoutManager);
         adapter =new BooksAdapter(this,this);
         rv.setAdapter(adapter);

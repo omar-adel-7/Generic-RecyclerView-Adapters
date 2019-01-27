@@ -1,11 +1,11 @@
 package omar.apps923.recycleradapters.activities;
 
 
-import android.databinding.DataBindingUtil;
-import android.databinding.ViewDataBinding;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ViewDataBinding;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
 
@@ -41,7 +41,7 @@ public class DatabindingAdapterActivity1 extends BaseActivity  implements Recycl
 
         binding.rlToolBar.tvToolBarNormal.setText(getString(R.string.databindingadapter_title));
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), RecyclerView.VERTICAL, false);
         binding.rv.setLayoutManager(layoutManager);
          binding.rv.setEmptyView( binding.txtvEmpty);
 

@@ -1,13 +1,12 @@
 package omar.apps923.recycleradapters.adapters.databinding;
 
 import android.content.Context;
-import android.databinding.ViewDataBinding;
-import android.support.v7.widget.RecyclerView;
+import androidx.databinding.ViewDataBinding;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 
 import java.util.ArrayList;
 
-import omar.apps923.recycleradapters.activities.DatabindingAdapterActivity2;
 import omar.apps923.recycleradapters.databinding.RowBookDatabindingBinding;
 import omar.apps923.recycleradapters.helpers.PicassoHelper;
 import omar.apps923.recycleradapters.models.BasicModel;

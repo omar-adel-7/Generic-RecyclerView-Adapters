@@ -1,7 +1,7 @@
 package omar.apps923.recycleradapters.models;
 
 import android.content.Context;
-import android.databinding.Bindable;
+import androidx.databinding.Bindable;
 import android.os.Parcel;
 
 

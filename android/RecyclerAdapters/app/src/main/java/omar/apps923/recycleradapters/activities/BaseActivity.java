@@ -1,6 +1,6 @@
 package omar.apps923.recycleradapters.activities;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import omar.apps923.recycleradapters.helpers.IonWrapper;
 import omar.apps923.recycleradapters.helpers.WebServices;

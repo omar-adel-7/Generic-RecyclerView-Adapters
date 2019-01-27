@@ -2,8 +2,8 @@ package omar.apps923.recycleradapters.adapters.normal;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.View;
 import android.view.ViewGroup;
 import java.util.ArrayList;
